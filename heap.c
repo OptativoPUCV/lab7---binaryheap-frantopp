@@ -20,7 +20,7 @@ Heap* createHeap(){
 Heap* HeapAux = (Heap*) malloc(sizeof(Heap));
    HeapAux->heapArray = (heapElem*) malloc(sizeof(heapElem) * 3);
    HeapAux->size = 0;
-   
+   HeapAux->capac = 3;
   
    return HeapAux;
 }
