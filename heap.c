@@ -44,7 +44,9 @@ void heap_push(Heap* pq, void* data, int priority){
     pos = (pos-1)/2;
   }
 
-  
+  pq->heapArray[pos].priority = priority;
+  pq->heapArray[pos].data = data;
+  pq->size++;
 }
 
 
