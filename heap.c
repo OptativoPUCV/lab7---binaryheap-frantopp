@@ -19,7 +19,8 @@ typedef struct Heap{
 Heap* createHeap(){
 Heap* HeapAux = (Heap*) malloc(sizeof(Heap));
    HeapAux->heapArray = (heapElem*) malloc(sizeof(heapElem) * 3);
-
+   HeapAux->size = 0;
+   
   
    return HeapAux;
 }
