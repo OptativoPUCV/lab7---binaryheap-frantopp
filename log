@@ -92,3 +92,17 @@ heap.c:57:7: error: unused variable ‘pos’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 cd61492
+Sun 14 May 2023 03:17:25 AM UTC: 
+ heap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:62:64: error: comparison between pointer and integer [-Werror]
+   62 |     if(sucesor2 < pq->size && pq->heapArray[sucesor2].priority > pq->heapArray > pq->heapArray[sucesor].priority) sucesor++;
+      |                                                                ^
+heap.c:62:64: error: comparisons like ‘X<=Y<=Z’ do not have their mathematical meaning [-Werror=parentheses]
+   62 |     if(sucesor2 < pq->size && pq->heapArray[sucesor2].priority > pq->heapArray > pq->heapArray[sucesor].priority) sucesor++;
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1c4cdc1
