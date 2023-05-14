@@ -57,5 +57,10 @@ void heap_pop(Heap* pq){
   int pos = 0;
   int sucesor = 1;
   int sucesor2 = 2;
+
+  while(sucesor < pq->size){
+    if(sucesor2 < pq->size && pq->heapArray[sucesor2].priority > pq->heapArray > pq->heapArray[sucesor].priority) sucesor++;
+     
+  }
 }
 
