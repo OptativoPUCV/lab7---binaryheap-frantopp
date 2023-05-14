@@ -149,3 +149,9 @@ heap.c:62:58: error: comparisons like ‘X<=Y<=Z’ do not have their mathematic
 cc1: all warnings being treated as errors
 Compilation failed
 fc3858e
+Sun 14 May 2023 03:30:15 AM UTC: 
+ heap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  8|0
+total_score: 70/70
+b70273d
