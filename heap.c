@@ -68,7 +68,7 @@ void heap_pop(Heap* pq){
     pq->heapArray[hijo] = auxiliar;
 
     pos = hijo;
-    hijo = (pos * 2) + 1;
+    hijo = (hijo * 2) + 1;
     hijo2 = (hijo2 * 2) + 2;
   }
 }

@@ -135,3 +135,17 @@ heap.c:62:58: error: comparisons like ‘X<=Y<=Z’ do not have their mathematic
 cc1: all warnings being treated as errors
 Compilation failed
 03f3cd6
+Sun 14 May 2023 03:26:10 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:62:58: error: comparison between pointer and integer [-Werror]
+   62 |     if(hijo2 < pq->size && pq->heapArray[hijo2].priority > pq->heapArray > pq->heapArray[hijo].priority) hijo++;
+      |                                                          ^
+heap.c:62:58: error: comparisons like ‘X<=Y<=Z’ do not have their mathematical meaning [-Werror=parentheses]
+   62 |     if(hijo2 < pq->size && pq->heapArray[hijo2].priority > pq->heapArray > pq->heapArray[hijo].priority) hijo++;
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fc3858e
