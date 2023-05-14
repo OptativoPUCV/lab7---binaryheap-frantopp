@@ -106,3 +106,18 @@ heap.c:62:64: error: comparisons like ‘X<=Y<=Z’ do not have their mathematic
 cc1: all warnings being treated as errors
 Compilation failed
 1c4cdc1
+Sun 14 May 2023 03:24:53 AM UTC: 
+ heap.c | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:61:9: error: ‘sucesor’ undeclared (first use in this function)
+   61 |   while(sucesor < pq->size){
+      |         ^~~~~~~
+heap.c:61:9: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:62:58: error: comparison between pointer and integer [-Werror]
+   62 |     if(hijo2 < pq->size && pq->heapArray[hijo2].priority > pq->heapArray > pq->heapArray[sucesor].priority) sucesor++;
+      |                                                          ^
+cc1: all warnings being treated as errors
+Compilation failed
+3841286
